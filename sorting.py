@@ -6,7 +6,18 @@ def bubble_sort(lst):
         >>> bubble_sort([3, 5, 7, 2, 4, 1])
         [1, 2, 3, 4, 5, 7]
     """
-    pass
+
+    for i in range(len(lst) - 1):
+        swap = False
+        for j in range(len(lst) - 1 - i):
+            if lst[j] > lst[j + 1]:
+                lst[j], lst[j + 1] = lst[j + 1], lst[j]
+                swap = True
+        if not swap:
+            break
+
+    return lst
+
 
 
 def merge_lists(list1, list2):
@@ -16,7 +27,21 @@ def merge_lists(list1, list2):
     [1, 3, 4, 7, 9, 11]
     """
 
-    pass
+    merged_list = []
+
+    while len(list1) > 0 or len(list2) > 0:
+        if list1 == []:
+            merged_list.append(list2.pop(0))
+        elif list2 == []:
+            merged_list.append(list1.pop(0))
+        elif list1[0] < list2[0]:
+            merged_list.append(list1.pop(0))
+        else:
+            merged_list.append(list2.pop(0))
+
+    return merged_list
+
+
 
 
 ##########ADVANCED##########
@@ -31,7 +56,31 @@ def merge_sort(lst):
     >>> merge_sort([6, 2, 3, 9, 0, 1])
     [0, 1, 2, 3, 6, 9]
     """
-    pass
+    
+
+    if len(lst) < 2:  
+        return lst
+
+    #Split list in half. (This is the recursive part -- split lists in half
+    # until there are n lists of 1 item.)
+    half = int(len(lst) / 2)
+    list1 = merge_sort(lst[:half])  
+    list2 = merge_sort(lst[half:]) 
+
+    #Then, merge lists back together. 
+    result_list = []
+
+    while len(list1) > 0 or len(list2) > 0:
+        if list1 == []:
+            result_list.append(list2.pop(0))
+        elif list2 == []:
+            result_list.append(list1.pop(0))
+        elif list1[0] < list2[0]:
+            result_list.append(list1.pop(0))
+        else:
+            result_list.append(list2.pop(0))
+
+    return result_list
 
 
 
