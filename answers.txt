@@ -1,0 +1,38 @@
+RECURSION
+1. Recursion is invoking a function call on itself. 
+2. A base case is the condition on which the function stops making recursive calls and returns something. Without a base case, a recursive function call goes on indefinitely and eventually times out. 
+
+GRAPHS
+1. A graph represents relationships between things and is made of a collection of nodes connected by edges.  A tree is just a restricted form of a graph. 
+2. Unlike trees, nodes in a graph can have multiple parents, graphs can contain loops, and relationships can be non-directed. 
+3. Relationships between people. 
+
+
+PERFORMANCE 
+
+Data Structure              Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List(Array)          O(1)    O(n)    O(1)    O(n)    O(n)    O(1)
+Linked List                 O(n)    O(n)    O(1)    O(1)    O(1)    O(n)     
+Doubly-Linked List          O(n)    O(n)    O(1)    O(1)    O(1)    O(1)             
+Queue (as Array)            X       X       O(1)    X       O(n)    X
+Queue (as LL or DLL)        X       X       O(1)    X       O(1)    X
+Stack (Array, LL, DLL)      X       X       O(1)    X       X       O(1)
+Deque (as DLL)              X       X       O(1)    O(1)    O(1)    O(1)
+
+
+Data Structure              Get     Add     Delete  Iterate Memory
+Dictionary (Hash Map)       O(1)    O(1)    O(1)    O(n)    medium O(n)
+Set (Hash Map)              O(1)    O(1)    O(1)    O(n)    medium O(n)   
+Binary Search Tree          O(logn) O(logn) O(logn) O(n)    medium O(n)            
+Tree                        O(n)    O(n)    O(n)    O(n)    medium O(n)
+
+
+GIT BRANCHING 
+1. Testing a new feature that I'm not sure I want to incorporate; 
+working with multiple team members on same project
+2. A pull request ia a request for the project owner to review and merge code
+with the main branch. 
+
+
+
+
