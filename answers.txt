@@ -27,6 +27,18 @@ Binary Search Tree          O(logn) O(logn) O(logn) O(n)    medium O(n)
 Tree                        O(n)    O(n)    O(n)    O(n)    medium O(n)
 
 
+SORTING
+1. Bubble Sort algorithm -- compares each item in the list with the next item 
+in the list. If the first item is larger than the second, the two items are 
+swapped. This process is repeated until the list is sorted. 
+2. Merge Sort algorithm -- Splits a list into several lists of one item each. 
+Then, compares first item in 2 lists. Adds the smaller item to a resulting sorted list. 
+Repeats comparison process until the sorted list is complete.
+3. Quick sort algorithm -- picks a random pivot. Moves numbers that are lower 
+than the pivot to the left of the number, and numbers that are higher than
+the pivot to the right of the number. Repeats 
+
+
 GIT BRANCHING 
 1. Testing a new feature that I'm not sure I want to incorporate; 
 working with multiple team members on same project
